@@ -1,0 +1,137 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+main {
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100% 50% 50% 200%;
+   grid-template-areas:
+      "covered covered"
+      "learn-more learn-more"
+      "join-today join-today";
+}
+h1,
+h2 {
+   font-family: "Frank Ruhl Libre", serif;
+}
+p {
+   font-family: "Fira Sans", sans-serif;
+}
+card {
+   background: white;
+}
+
+.covered {
+   background: #c6dde9;
+   grid-area: covered;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 25% 25% 50%;
+   justify-content: space-around;
+}
+.covered h1 {
+   font-size: 50px;
+   font-weight: 1000;
+   padding-inline-start: 3rem;
+   padding-inline-end: 3rem;
+   grid-column: 1/3;
+   display: flex;
+   align-self: flex-end;
+   justify-self: flex-end;
+}
+.covered p {
+   font-size: 18px;
+   padding-inline-start: 3rem;
+   padding-inline-end: 3rem;
+   grid-column: 1/3;
+   grid-row: 2/3;
+   justify-content: center;
+   align-self: center;
+}
+.join-now {
+   width: 150px;
+   height: 50px;
+   border-radius: 30px;
+   border: none;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 700;
+   grid-column: 1/2;
+   grid-row: 3/4;
+   margin-top: 2rem;
+   margin-left: 3rem;
+}
+.covered img {
+   width: 70%;
+   height: 40%;
+   grid-column: 1/3;
+   grid-row: 3/4;
+   display: flex;
+   align-self: flex-end;
+   justify-self: flex-end;
+}
+
+.learn-more {
+   background: #f07949;
+   grid-area: learn-more;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.learn-more p {
+   font-size: 15px;
+   color: #773c24;
+}
+.learn-more h2 {
+   color: white;
+   font-size: 40px;
+}
+
+.join-today {
+   background: #f9b131;
+   grid-area: join-today;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.join-today p {
+   font-size: 15px;
+   color: #773c24;
+}
+.join-today h2 {
+   color: white;
+   font-size: 40px;
+}
+
+.personal {
+   grid-column: 1/3;
+   grid-row: 4/5;
+   background: #a8a19e;
+   display: grid;
+   grid-template-rows: 15% 15% 1fr 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   padding-inline-start: 1rem;
+   padding-inline-end: 1rem;
+}
+
+.personal h1 {
+   font-family: "Frank Ruhl Libre", serif;
+   color: white;
+   font-size: 50px;
+   grid-row: 1/2;
+   align-self: center;
+   justify-self: center;
+}
+.personal p {
+   align-self: center;
+   letter-spacing: 1px;
+   line-height: 1.5;
+}
+.card1 {
+}
