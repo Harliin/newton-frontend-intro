@@ -21,6 +21,9 @@ main {
 }
 .my-nav a {
    text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   color: #a8a19e;
 }
 h1,
 h2,
