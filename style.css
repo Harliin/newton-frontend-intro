@@ -7,26 +7,69 @@ main {
    height: 100vh;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100% 50% 50% 200%;
-   grid-template-areas:
-      "covered covered"
-      "learn-more learn-more"
-      "join-today join-today";
+   grid-template-rows: 80% 20% 50% 50% 200% 100%;
+}
+.my-nav {
+   grid-row: 2/3;
+   grid-column: 1/3;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+}
+.my-nav a {
+   text-decoration: none;
 }
 h1,
-h2 {
+h2,
+h3 {
    font-family: "Frank Ruhl Libre", serif;
 }
 p {
    font-family: "Fira Sans", sans-serif;
 }
 card {
+   margin-top: 15px;
    background: white;
+   height: 300px;
+   width: 270px;
+   border-radius: 5px;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+   align-self: center;
+   justify-self: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+card div {
+   width: 235px;
+   height: 140px;
+   border-radius: 5px;
+   margin-top: -45px;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+}
+card h3 {
+   align-self: center;
+   font-size: 22px;
+   margin-top: 7px;
+}
+card p {
+   align-self: center;
+   margin: 15px 20px 5px 20px;
+   text-align: center;
+   font-size: 11px;
+   color: #999999;
+   font-weight: 800;
 }
 
 .covered {
    background: #c6dde9;
-   grid-area: covered;
+   grid-row: 1/2;
+   grid-column: 1/3;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 25% 25% 50%;
@@ -75,8 +118,9 @@ card {
 }
 
 .learn-more {
+   grid-row: 3/4;
+   grid-column: 1/3;
    background: #f07949;
-   grid-area: learn-more;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -92,8 +136,9 @@ card {
 }
 
 .join-today {
+   grid-row: 4/5;
+   grid-column: 1/3;
    background: #f9b131;
-   grid-area: join-today;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -110,7 +155,7 @@ card {
 
 .personal {
    grid-column: 1/3;
-   grid-row: 4/5;
+   grid-row: 5/6;
    background: #a8a19e;
    display: grid;
    grid-template-rows: 15% 15% 1fr 1fr 1fr;
@@ -134,4 +179,68 @@ card {
    line-height: 1.5;
 }
 .card1 {
+   grid-row: 3/4;
+}
+.card1 div {
+   background: #c6dde9;
+   align-self: center;
+}
+.card1 img {
+   width: 40%;
+   margin-bottom: -15px;
+   margin-top: 7px;
+}
+
+.card2 {
+   grid-row: 4/5;
+}
+.card2 div {
+   background: #f9b131;
+   align-self: center;
+}
+.card2 img {
+   height: 250%;
+   zoom: 5;
+   margin-bottom: -10px;
+   margin-top: 5px;
+}
+
+.card3 {
+   grid-row: 5/6;
+}
+.card3 div {
+   background: #f07949;
+   align-self: center;
+}
+.card3 img {
+   height: 220%;
+   width: 60%;
+   zoom: 5;
+   margin-bottom: -15px;
+   margin-top: 5px;
+}
+
+.about {
+   background: #f9b131;
+   grid-row: 6/7;
+   grid-column: 1/3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.about h2 {
+   margin-top: 40px;
+   color: white;
+   font-size: 45px;
+}
+.about p {
+   color: #634714;
+   font-weight: 600;
+   margin-top: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+   letter-spacing: 1px;
+   font-size: 18px;
+   text-align: center;
+   align-content: center;
 }
