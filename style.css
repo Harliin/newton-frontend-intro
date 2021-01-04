@@ -40,7 +40,7 @@ main {
 .my-nav a {
    text-decoration: none;
    letter-spacing: 3px;
-   font-weight: bold;
+   font-weight: 800;
    color: #a8a19e;
 }
 
@@ -65,6 +65,8 @@ main {
    margin-top: 1rem;
    padding-inline-start: 5vw;
    padding-inline-end: 5vw;
+   color: #50585e;
+   font-weight: 600;
 
    align-self: center;
 }
@@ -85,6 +87,7 @@ main {
    grid-row: 3/4;
    margin-top: 2rem;
    margin-left: 3rem;
+   color: #333333;
 }
 
 .learn-more {
@@ -98,7 +101,8 @@ main {
 }
 .learn-more p {
    font-size: 5vw;
-   color: #773c24;
+   font-weight: 600;
+   color: #793d25;
 }
 .learn-more h2 {
    color: white;
@@ -116,7 +120,8 @@ main {
 }
 .join-today p {
    font-size: 5vw;
-   color: #773c24;
+   font-weight: 600;
+   color: #7d5919;
 }
 .join-today h2 {
    color: white;
@@ -143,9 +148,11 @@ main {
 }
 .personal p {
    font-size: 4vw;
+   font-weight: 600;
    align-self: center;
    letter-spacing: 1px;
    line-height: 1.5;
+   color: #44403f;
 }
 
 card {
@@ -234,7 +241,7 @@ card h3 {
 }
 .about p {
    color: #634714;
-   font-weight: 500;
+   font-weight: 600;
    margin-top: 3vw;
    margin-left: 7vw;
    margin-right: 7vw;
@@ -257,6 +264,7 @@ card h3 {
    align-self: flex-start;
    color: #8d8d8d;
    font-size: 6vw;
+   font-weight: 900;
 }
 .how-it-works p {
    align-self: center;
@@ -268,17 +276,28 @@ card h3 {
    font-size: 5vw;
    padding-left: 5vw;
    padding-right: 5vw;
+   font-weight: 600;
+   color: #4d4d4d;
 }
 .start {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background-color: #c7ddea;
    display: flex;
    justify-content: center;
    align-items: center;
+   text-align: center;
+}
+.start h2 {
+   font-size: 10vw;
+   font-weight: 900;
+   text-align: center;
+   color: #282c2f;
 }
 
 .one {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background: #ffffff;
    display: flex;
    flex-direction: column;
@@ -286,24 +305,28 @@ card h3 {
 }
 .two {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background: #ebebeb;
    display: flex;
    flex-direction: column;
 }
 .three {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background: #ffffff;
    display: flex;
    flex-direction: column;
 }
 .four {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background: #f17949;
    display: flex;
    flex-direction: column;
 }
 .five {
    flex-grow: 1;
+   flex-basis: 16.6666%;
    background: #ffffff;
    display: flex;
    flex-direction: column;
