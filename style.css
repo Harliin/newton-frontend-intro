@@ -3,16 +3,29 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+h1,
+h2,
+h3 {
+   font-family: "Frank Ruhl Libre", serif;
+}
+
+p {
+   font-family: "Fira Sans", sans-serif;
+}
+
 .wrapper {
    margin-left: auto;
    margin-right: auto;
 }
+
 main {
    height: 100vh;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 80% 20% 50% 50% 200% 100%;
+   grid-template-rows: 80% 20% 50% 50% 200% 100% 150%;
 }
+
 .my-nav {
    grid-row: 2/3;
    grid-column: 1/3;
@@ -23,57 +36,15 @@ main {
    align-items: center;
    justify-items: center;
 }
+
 .my-nav a {
    text-decoration: none;
    letter-spacing: 3px;
    font-weight: bold;
    color: #a8a19e;
 }
-h1,
-h2,
-h3 {
-   font-family: "Frank Ruhl Libre", serif;
-}
-p {
-   font-family: "Fira Sans", sans-serif;
-}
-/* card {
-   margin-top: 15px;
-   background: white;
-   height: 300px;
-   width: 270px;
-   border-radius: 5px;
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-   align-self: center;
-   justify-self: center;
-   justify-content: center;
-   display: flex;
-   flex-direction: column;
-}
-card div {
-   width: 235px;
-   height: 140px;
-   border-radius: 5px;
-   margin-top: -45px;
-   display: flex;
-   justify-content: center;
-   overflow: hidden;
-}
-card h3 {
-   align-self: center;
-   font-size: 22px;
-   margin-top: 7px;
-}
-card p {
-   align-self: center;
-   margin: 15px 20px 5px 20px;
-   text-align: center;
-   font-size: 11px;
-   color: #999999;
-   font-weight: 800;
-} */
 
-.covered {
+.intial {
    background: #c6dde9;
    grid-row: 1/2;
    grid-column: 1/3;
@@ -83,13 +54,13 @@ card p {
    justify-content: space-around;
    padding-top: 1rem;
 }
-.covered h1 {
+.intial h1 {
    font-size: 10vw;
    font-weight: 1000;
    padding-inline-start: 5vw;
    padding-inline-end: 5vw;
 }
-.covered p {
+.intial p {
    font-size: 5vw;
    margin-top: 1rem;
    padding-inline-start: 5vw;
@@ -97,12 +68,12 @@ card p {
 
    align-self: center;
 }
-.covered img {
+.intial img {
    width: 70%;
    height: 40%;
    align-self: flex-end;
 }
-.join-now {
+.intial button {
    width: 40vw;
    height: 13vw;
    border-radius: 30px;
@@ -158,7 +129,6 @@ card p {
    background: #a8a19e;
    display: flex;
    flex-direction: column;
-   /* grid-template-rows: 15% 15% 1fr 1fr 1fr; */
    align-items: center;
    padding-inline-start: 1rem;
    padding-inline-end: 1rem;
@@ -170,7 +140,6 @@ card p {
    color: white;
    font-size: 12vw;
    margin-top: 1rem;
-   /* grid-row: 1/2; */
 }
 .personal p {
    font-size: 4vw;
@@ -178,6 +147,7 @@ card p {
    letter-spacing: 1px;
    line-height: 1.5;
 }
+
 card {
    width: 60vw;
    height: 70vw;
@@ -189,6 +159,7 @@ card {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 card div {
    width: 55vw;
@@ -214,6 +185,7 @@ card h3 {
    font-weight: 800;
    margin-top: 1vw;
 }
+
 .card1 div {
    background: #c6dde9;
    align-self: center;
@@ -224,8 +196,6 @@ card h3 {
    margin-top: 7px;
 }
 
-.card2 {
-}
 .card2 div {
    background: #f9b131;
    align-self: center;
@@ -237,8 +207,6 @@ card h3 {
    margin-top: 5px;
 }
 
-.card3 {
-}
 .card3 div {
    background: #f07949;
    align-self: center;
@@ -273,4 +241,70 @@ card h3 {
    font-size: 5vw;
    text-align: center;
    align-content: center;
+}
+
+.how-it-works {
+   grid-row: 7/8;
+   grid-column: 1/3;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.how-it-works div {
+   padding: 2vw;
+}
+.how-it-works h3 {
+   align-self: flex-start;
+   color: #8d8d8d;
+   font-size: 6vw;
+}
+.how-it-works p {
+   align-self: center;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   font-size: 5vw;
+   padding-left: 5vw;
+   padding-right: 5vw;
+}
+.start {
+   flex-grow: 1;
+   background-color: #c7ddea;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.one {
+   flex-grow: 1;
+   background: #ffffff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.two {
+   flex-grow: 1;
+   background: #ebebeb;
+   display: flex;
+   flex-direction: column;
+}
+.three {
+   flex-grow: 1;
+   background: #ffffff;
+   display: flex;
+   flex-direction: column;
+}
+.four {
+   flex-grow: 1;
+   background: #f17949;
+   display: flex;
+   flex-direction: column;
+}
+.five {
+   flex-grow: 1;
+   background: #ffffff;
+   display: flex;
+   flex-direction: column;
 }
