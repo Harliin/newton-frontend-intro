@@ -24,7 +24,7 @@ p {
       height: 100vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 40% 20% 100%;
+      grid-template-rows: 58% 20% 100%;
    }
 
    .hello {
@@ -34,16 +34,23 @@ p {
       display: flex;
       align-items: flex-end;
       overflow: hidden;
+      position: relative;
    }
    .hello h1 {
-      font-size: 12vw;
+      font-size: 13vw;
       align-self: center;
       margin-left: 1rem;
+      position: absolute;
+      width: 50vw;
+      margin-bottom: 10vw;
+      font-weight: 600;
    }
    .hello img {
-      width: 47%;
-      height: 90%;
-      margin-right: 1rem;
+      margin-bottom: -10vw;
+      width: 60%;
+      height: 101%;
+      position: absolute;
+      margin-left: 35vw;
    }
 
    .my-nav {
@@ -74,5 +81,74 @@ p {
       align-items: center;
    }
    .contact h2 {
+      font-size: 11vw;
+      color: white;
+      margin-top: 6vw;
+      width: 84vw;
+      align-self: center;
+   }
+   .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: flex-start;
+      padding: 6vw;
+      flex-grow: 1;
+      width: 100vw;
+   }
+   .label-email {
+      color: #e5e3e2;
+      font-size: 5vw;
+      font-weight: 600;
+      margin-left: 2vw;
+   }
+   #email {
+      width: -webkit-fill-available;
+      height: 6vh;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+      margin-top: 6px;
+      padding: 5px;
+      font-size: 4vw;
+   }
+
+   .label-message {
+      color: #e5e3e2;
+      font-size: 5vw;
+      font-weight: 600;
+      margin-left: 2vw;
+      margin-top: 7px;
+   }
+   #message {
+      width: -webkit-fill-available;
+      height: 28vh;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+      margin-top: 6px;
+      padding: 5px;
+      font-size: 4vw;
+   }
+   ::placeholder {
+      font-size: 4vw;
+      margin-left: 3px;
+      margin-top: 5px;
+      color: black;
+      font-weight: bold;
+   }
+
+   .submit {
+      align-self: flex-end;
+      margin-top: 20px;
+      width: 35vw;
+      height: 7vh;
+      border-radius: 30px;
+      border: none;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      font-stretch: semi-condensed;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+      color: #333333;
    }
 }
