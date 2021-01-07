@@ -3,10 +3,44 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre"
+         rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Fira+Sans"
+         rel="stylesheet"
+      />
       <link rel="stylesheet" href="/styles/contact.css" />
-      <title>Document</title>
+      <title>Contact</title>
    </head>
    <body>
-      <h1>Hello</h1>
+      <div class="wrapper">
+         <main>
+            <div class="hello">
+               <h1>Oh hello there!</h1>
+               <img src="/assets/man-and-baby.png" alt="man-and-baby" />
+            </div>
+            <nav class="my-nav">
+               <a class="nav-active" href="/home.html">Home</a>
+               <a href="#">Our offer</a>
+               <a href="#">Why us</a>
+               <a href="/contact.html">Contact</a>
+            </nav>
+            <div class="contact">
+               <h2>Whats on your mind?</h2>
+               <form action="/action">
+                  <label for="email">Your email:</label>
+                  <input type="text" id="email" />
+
+                  <label for="message">Your message</label>
+                  <textarea id="message" placeholder="Dear Insurance company...">
+
+                  <input type="submit" value="SEND MESSAGE">
+               </form>
+            </div>
+         </main>
+      </div>
    </body>
 </html>
