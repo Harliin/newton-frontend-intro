@@ -4,7 +4,6 @@ var rootElement = document.documentElement
 
 
 function scrollToTop() {
-    console.log("hello");
     rootElement.scrollTo({
         top: 0,
         behavior: "smooth"
